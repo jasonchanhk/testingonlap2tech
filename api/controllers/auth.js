@@ -6,6 +6,8 @@ const jwt = require("jsonwebtoken");
 
 const User = require('../models/users')
 
+// Adding this comment here
+
 router.post('/register', async (req, res) => {
     try{
         const salt = await bcrypt.genSalt();
